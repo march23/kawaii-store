@@ -1,4 +1,5 @@
 <template>
+  <div class="col-sm-6">
     <ul class="list-group">
       <li class="list-group-item d-flex justify-content-between align-items-center" v-for="product in products">
           {{product.name}}
@@ -9,6 +10,7 @@
           </span>
       </li>
     </ul>
+  </div>
 </template>
 
 <script>

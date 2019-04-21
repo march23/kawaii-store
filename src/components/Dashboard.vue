@@ -1,11 +1,8 @@
 <template>
   <div>
-    <div class="row">
-      <create-product v-on:create-product="addProduct" class="col"></create-product>  
-    </div>
-    <br/>
-    <div class="row">
-      <list-product :products="products" class="col"></list-product>  
+    <div class="card-deck">
+      <create-product v-on:create-product="addProduct"></create-product>
+      <list-product :products="products"></list-product>  
     </div>
     <br/>
     <span>Total: {{totalProducts}}</span>
